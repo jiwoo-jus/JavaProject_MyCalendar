@@ -20,7 +20,6 @@ public class Main {
 			}
 			if(option == 3) {
 				System.out.println("xxxx/xx/xx 형태로 날짜 입력");
-				//String howlong_scan = new String(scan.nextLine());
 				scan.nextLine();
 				String [] newdate = scan.nextLine().split("/");
 				Calculation.how_many_days_left(newdate);
