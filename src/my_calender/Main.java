@@ -14,13 +14,12 @@ public class Main {
 				Calculation.when_is_it(scan.nextInt());
 				}
 			if(option == 2) {
-				scan.nextLine(); //scanner가  nextInt()에서 nextLine()으로 잘 넘어오기 위함
 				System.out.println("오늘로부터 _일 전?");
 				Calculation.when_is_it(scan.nextInt()*(-1));
 			}
 			if(option == 3) {
 				System.out.println("xxxx/xx/xx 형태로 날짜 입력");
-				scan.nextLine();
+				scan.nextLine(); //scanner가  nextInt()에서 nextLine()으로 잘 넘어오기 위함
 				String [] newdate = scan.nextLine().split("/");
 				Calculation.how_many_days_left(newdate);
 			}

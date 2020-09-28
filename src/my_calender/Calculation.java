@@ -6,8 +6,6 @@ public class Calculation {
 
 	static void when_is_it(int days) {
 		Calendar cal = Calendar.getInstance();
-		Calendar newcalen = Calendar.getInstance();
-		newcalen.clear();
 		cal.set(Calendar.DAY_OF_MONTH, cal.get(Calendar.DAY_OF_MONTH) + days);
 		System.out.print("=> " + cal.get(Calendar.YEAR) + "년 " + (cal.get(Calendar.MONTH) + 1) + "월 " + cal.get(Calendar.DAY_OF_MONTH) + "일 ");
 		switch(cal.get(Calendar.DAY_OF_WEEK)) {
@@ -53,7 +51,6 @@ public class Calculation {
 			total = (new_year - cal.get(Calendar.YEAR)) * 365 + leap_year_count + (s1 - s2);
 		else
 			total = (new_year - cal.get(Calendar.YEAR) - 1) *365 + leap_year_count + (s1 + 365 - s2);
-
 		System.out.print("=> 오늘로부터 " + total + "일 후 입니다.");
 		System.out.print("(" + total/365 + "년  그리고 ");
 		total = total % 365;
