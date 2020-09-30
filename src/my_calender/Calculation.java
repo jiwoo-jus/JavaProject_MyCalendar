@@ -1,9 +1,7 @@
 package my_calender;
-
 import java.util.Calendar;
 
 public class Calculation {
-
 	static void when_is_it(int days) {
 		Calendar cal = Calendar.getInstance();
 		cal.set(Calendar.DAY_OF_MONTH, cal.get(Calendar.DAY_OF_MONTH) + days);
@@ -14,8 +12,8 @@ public class Calculation {
 		case Calendar.TUESDAY : System.out.println("화요일\n"); break;
 		case Calendar.WEDNESDAY : System.out.println("수요일\n"); break;
 		case Calendar.THURSDAY : System.out.println("목요일\n"); break;
-		case Calendar.FRIDAY : System.out.println("토요일\n"); break;
-		case Calendar.SATURDAY : System.out.println("금요일\n"); break;
+		case Calendar.FRIDAY : System.out.println("금요일\n"); break;
+		case Calendar.SATURDAY : System.out.println("토요일\n"); break;
 		}
 	}
 
